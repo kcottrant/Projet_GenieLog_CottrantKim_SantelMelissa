@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping namespace="Domain" assembly="Domain" xmlns="urn:nhibernate-mapping-2.2">
+
+
+  <class table="utilisateur" name="Utilisateur">
+
+
+    <id name="Id" type="int" column="id">
+
+      <property name="Nom" column="nom" not-null="true"/>
+
+      <property name="Prenom" column="prenom" not-null="true"/>
+
+      <property name="Email" column="email" not-null="true"/>
+      
+      <property name="Mdp" column="mdp" not-null="true"/>
+  
+    </id>
+
+  </class>
+
+</hibernate-mapping>

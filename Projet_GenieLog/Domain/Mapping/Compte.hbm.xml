@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping namespace="Domain" assembly="Domain" xmlns="urn:nhibernate-mapping-2.2">
+
+
+  <class table="compte" name="Compte">
+
+
+    <id name="IdCompte" type="int" column="id_compte">
+
+      <many-to-one name="Id" class="Utilisateur" column="id"/>
+
+      <property name="Titre" column="titre" not-null="true"/>
+
+      <property name="EmailCompte" column="email_compte" not-null="true"/>
+      <property name="MdpCompte" column="mdp_compte" not-null="true"/>
+      <property name="Logo" column="logo" not-null="true"/>
+      <property name="DateModif" column="date_de_modif" not-null="true"/>
+      <property name="Securite" column="securite" not-null="true"/>
+      <property name="Categorie" column="categorie" not-null="true"/>
+    </id>
+
+  </class>
+
+</hibernate-mapping>
